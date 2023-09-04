@@ -109,8 +109,11 @@ header .header__arrow {
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 100%;
+  height: 150px;
 }
 header .header__arrow .arrow {
+  position: absolute;
   width: 50px;
   height: 50px;
   border: 2px solid #ABADB5;
@@ -119,12 +122,15 @@ header .header__arrow .arrow {
   transform: rotate(45deg);
 }
 header .header__arrow div:nth-child(1) {
+  top: 20px;
   animation: animateArrow 2s linear infinite;
 }
 header .header__arrow div:nth-child(2) {
+  top: 40px;
   animation: animateArrow 2s linear infinite;
 }
 header .header__arrow div:nth-child(3) {
+  top: 60px;
   animation: animateArrow 2s linear infinite;
 }
 @keyframes animateArrow {
