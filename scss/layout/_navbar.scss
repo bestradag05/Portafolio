@@ -1,0 +1,54 @@
+nav{
+    background: $color-primario; 
+    
+    .container{
+       .navbar-brand{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: $color-texto;
+   
+           i{
+               margin-right: 5px;
+           }
+   
+           span{
+               color: $color-secundario;
+           }
+   
+           p{
+               margin-bottom: 0;
+           }
+       }
+       ul{
+           li{
+   
+               a{
+                   color: $color-texto;
+                   padding: 0 20px!important;
+
+                   &::after{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 3px;
+                    background: $color-secundario;
+                    transition: all .5s;
+                   }
+   
+                   &:hover{
+                       color: $color-secundario;
+                   }
+
+                   &:hover::after{
+                    width: 60%;
+                   }
+                   
+
+                }
+                
+            }
+       }
+    }
+   
+   }
