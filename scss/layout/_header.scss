@@ -1,16 +1,13 @@
-
 header {
-    height: calc(100vh - 72px);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 50px;
-    background: $color-primario;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+  background: $color-primario;
 
   .content {
-
     .content--title {
-      font-size: 8vmin;
       color: $color-texto;
 
       span {
@@ -19,12 +16,12 @@ header {
     }
 
     .content__text {
-      font-size: 5vmin;
+      font-size: 2vw;
       color: $color-texto;
     }
 
     .content__title {
-      font-size: 8vmin;
+      font-size: 4vw;
       color: $color-texto;
 
       span {
@@ -38,30 +35,7 @@ header {
     }
 
     .content__social-medias__icons {
-
-        a{
-            text-decoration: none;
-            border-radius: 50%;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            margin: 0 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.5s;
-
-            i {
-                font-size: 4vmin;
-                color: #fff;
-                z-index: 1;
-              }
-
-              &:hover{
-                background: $color-secundario;
-              }
-        }
-
+      @extend icons;
     }
   }
 
@@ -73,12 +47,12 @@ header {
     border-radius: 80%;
 
     img {
-      width: 100%;
+      max-width: 100%;
+      height: auto;
     }
   }
 
-  .header__arrow{
-
+  .header__arrow {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,34 +60,28 @@ header {
     position: relative;
     width: 100%;
     height: 150px;
-    
 
-    .arrow{
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border: 2px solid $color-texto;
-        border-left: none;
-        border-top: none;
-        transform: rotate(45deg);
-        
-        
+    .arrow {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border: 2px solid $color-texto;
+      border-left: none;
+      border-top: none;
+      transform: rotate(45deg);
     }
 
     @for $i from 1 through 3 {
-        & div:nth-child(#{$i}){
-            top: 20px * $i;
-            animation: animateArrow 2s linear infinite; 
-
-        }
+      & div:nth-child(#{$i}) {
+        top: 20px * $i;
+        animation: animateArrow 2s linear infinite;
+      }
     }
 
     @keyframes animateArrow {
-        100%{
-            transform: translateY(0.6em * 5.2) rotate(45deg);
-        }
+      100% {
+        transform: translateY(0.6em * 5.2) rotate(45deg);
+      }
     }
-  
   }
-
 }

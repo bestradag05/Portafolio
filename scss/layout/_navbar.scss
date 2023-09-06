@@ -1,54 +1,101 @@
-nav{
-    background: $color-primario; 
+nav {
+  background: $color-primario;
+
+  .container {
     
-    .container{
-       .navbar-brand{
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           color: $color-texto;
-   
-           i{
-               margin-right: 5px;
-           }
-   
-           span{
-               color: $color-secundario;
-           }
-   
-           p{
-               margin-bottom: 0;
-           }
-       }
-       ul{
-           li{
-   
-               a{
-                   color: $color-texto;
-                   padding: 0 20px!important;
+    .navbar-brand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-texto;
 
-                   &::after{
-                    content: '';
-                    display: block;
-                    width: 0;
-                    height: 3px;
-                    background: $color-secundario;
-                    transition: all .5s;
-                   }
-   
-                   &:hover{
-                       color: $color-secundario;
-                   }
+      i {
+        margin-right: 5px;
+      }
 
-                   &:hover::after{
-                    width: 60%;
-                   }
-                   
+      span {
+        color: $color-secundario;
+      }
 
-                }
-                
-            }
-       }
+      p {
+        margin-bottom: 0;
+      }
     }
-   
-   }
+
+
+    .navbar-toggler:focus{
+        box-shadow: none!important;
+    }
+    .offcanvas {
+
+        background: $color-primario-dark;
+
+        .offcanvas-header__img{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 50%;
+                height: auto;
+                border-radius: 50%;
+                background: #fff;
+                border: 5px solid $color-secundario;
+            }
+        }
+
+        .offcanvas-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            overflow-y: none!important;
+        }
+
+        .offcanvas-footer{
+            margin: 2px;
+            .offcanvas-footer__social-medias{
+                display: flex;
+                justify-content: center;
+                .offcanvas-footer__social-medias__icons{
+                    @extend icons;
+                }
+            }
+        }
+
+      ul {
+        width: 100%; 
+        li {
+          a.nav-link {
+            color: $color-texto;
+            padding: 0 20px;
+
+            &::after {
+              content: "";
+              display: block;
+              width: 0;
+              height: 3px;
+              background: $color-secundario;
+              transition: all 0.5s;
+            }
+
+            &:hover {
+              color: $color-secundario;
+            }
+
+            &:hover::after {
+              width: 60%;
+            }
+
+            &:focus {
+              color: $color-texto !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
