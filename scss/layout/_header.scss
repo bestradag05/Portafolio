@@ -1,31 +1,30 @@
 header {
-  height: 100%;
+  height: calc(100vh - 72px);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 50px;
-  background: $color-primario;
+  background: $color-fondo;
 
   .content {
     .content--title {
       color: $color-texto;
 
       span {
-        color: $color-secundario;
+        color: $color-fondo-gris;
       }
     }
 
     .content__text {
-      font-size: 2vw;
       color: $color-texto;
     }
 
     .content__title {
-      font-size: 4vw;
+
       color: $color-texto;
 
       span {
-        color: $color-secundario;
+        color: $primary-color;
       }
     }
 
@@ -43,11 +42,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $color-secundario;
+    background: $primary-color;
     border-radius: 80%;
 
     img {
       max-width: 100%;
+      /* width: 400px; */
       height: auto;
     }
   }

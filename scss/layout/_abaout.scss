@@ -1,0 +1,77 @@
+section{
+
+    padding: 120px 0;
+    background: $color-fondo-gris;
+
+    .abaout__div{
+        display: flex;
+        padding: 0 50px;
+        &:nth-child(1){
+            background: url(../../img/about_shap_bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 290px;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+
+        &:nth-child(2){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        
+            .abaout__buttons--block{
+                @include buttons($primary-color, white);
+
+                &:hover{
+                    @include buttons(transparent, $primary-color);
+                }
+
+            }
+
+            .abaout__buttons--outline{
+                @include buttons(transparent, $primary-color);
+
+                &:hover{
+                    @include buttons($primary-color, white);
+                }
+            }
+            
+            
+        
+        }
+
+    
+        .abaout__title{
+            font-size: 2.5vw;
+            color: $color-texto;
+            position: relative;
+            font-weight: 600;
+
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 40%;
+                height: 4px;
+                background: $primary-color;
+            }
+        }
+
+        .abaout__parrafo{
+            color: $color-texto;
+    
+        }
+
+        .abaout__buttons{
+            
+        }
+    
+    }
+    
+
+}
+

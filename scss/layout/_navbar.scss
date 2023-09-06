@@ -1,5 +1,5 @@
 nav {
-  background: $color-primario;
+  background: $color-fondo-gris;
 
   .container {
     
@@ -14,7 +14,7 @@ nav {
       }
 
       span {
-        color: $color-secundario;
+        color: $primary-color;
       }
 
       p {
@@ -25,10 +25,11 @@ nav {
 
     .navbar-toggler:focus{
         box-shadow: none!important;
+        border: none;
     }
     .offcanvas {
 
-        background: $color-primario-dark;
+        background: $color-fondo;
 
         .offcanvas-header__img{
             width: 100%;
@@ -43,7 +44,7 @@ nav {
                 height: auto;
                 border-radius: 50%;
                 background: #fff;
-                border: 5px solid $color-secundario;
+                border: 5px solid $color-fondo-gris;
             }
         }
 
@@ -78,12 +79,12 @@ nav {
               display: block;
               width: 0;
               height: 3px;
-              background: $color-secundario;
+              background: $primary-color;
               transition: all 0.5s;
             }
 
             &:hover {
-              color: $color-secundario;
+              color: $primary-color;
             }
 
             &:hover::after {
@@ -91,7 +92,7 @@ nav {
             }
 
             &:focus {
-              color: $color-texto !important;
+              color: $primary-color !important;
             }
           }
         }

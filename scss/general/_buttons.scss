@@ -1,0 +1,8 @@
+@mixin buttons($background, $color) {
+    background: $background;
+    color: $color;
+    border: 2px solid $primary-color;
+    padding: 15px;
+    margin: 20px 15px;
+    transition: all .5s;
+}

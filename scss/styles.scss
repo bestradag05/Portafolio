@@ -3,9 +3,10 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 //Colors
-$color-primario: #0b0b18;
-$color-primario-dark: #040408;
-$color-secundario: #FB982B;
+$color-fondo: #090909;
+$color-fondo-gris: #1c1c1c;
+$primary-color-dark: #040408;
+$primary-color: #FB982B;
 $color-texto: #ABADB5;
 
 //Generales
@@ -20,6 +21,8 @@ $color-texto: #ABADB5;
 /* Generales */
 @import "general/mediaq";
 @import "general/icons";
+@import "general/buttons";
 /* Layouts */
 @import "layout/navbar";
 @import "layout/header";
+@import "layout/abaout";
