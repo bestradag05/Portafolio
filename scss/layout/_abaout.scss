@@ -14,7 +14,6 @@ section{
             align-items: center;
         }
 
-
         &:nth-child(2){
             flex-direction: column;
             justify-content: center;
@@ -37,9 +36,7 @@ section{
                     @include buttons($primary-color, white);
                 }
             }
-            
-            
-        
+
         }
 
     
