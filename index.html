@@ -1,139 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bryan Estrada Gómez</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-  <!--     <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bryan Estrada Gómez</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!--     <link
       rel="stylesheet"
       href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     /> -->
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
-  <!-- Navbar -->
+  <body>
+    <!-- Navbar -->
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container py-2">
-      <a class="navbar-brand" href="#">
-        <i class="fa-solid fa-code"></i>
-        <p>Beg<span>Code</span></p>
-      </a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container py-2">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-code"></i>
+          <p>Beg<span>Code</span></p>
+        </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars-sort fa-bounce fa-lg" style="color: #ffffff"></i>
-      </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <i
+            class="fa-solid fa-bars-sort fa-bounce fa-lg"
+            style="color: #ffffff"
+          ></i>
+        </button>
 
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
-        aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <div class="offcanvas-header__img">
-            <img src="img/persona_programando.png" alt="" />
-            <a class="navbar-brand" href="#">
-              <i class="fa-solid fa-code"></i>
-              <p>Beg<span>Code</span></p>
-            </a>
-            <p class="p-2 text-justify text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              nesciunt, quia optio sunt odio adipisci animi maxime
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="offcanvas-header__img">
+              <img src="img/persona_programando.png" alt="" />
+              <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-code"></i>
+                <p>Beg<span>Code</span></p>
+              </a>
+              <p class="p-2 text-justify text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                nesciunt, quia optio sunt odio adipisci animi maxime
+              </p>
+            </div>
+          </div>
+          <div class="offcanvas-body justify-content-start">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item my-2 my-lg-0">
+                <a href="#" class="nav-link">Abaout me</a>
+              </li>
+              <li class="nav-item my-2 my-lg-0">
+                <a href="#" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item my-2 my-lg-0">
+                <a href="#" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item my-2 my-lg-0">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="offcanvas-footer d-lg-none">
+            <div
+              class="offcanvas-footer__social-medias d-flex aligns-items-center"
+            >
+              <div class="offcanvas-footer__social-medias__icons">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+              </div>
+              <div class="offcanvas-footer__social-medias__icons">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div
+            class="content col-md-6 d-flex justify-content-center aligns-items center flex-column"
+          >
+            <h2 class="content__text">Hello mate</h2>
+            <h1 class="content__title display-3">
+              I'm Bryan Estrada a <span>Full Stack </span> Developer
+            </h1>
+            <p class="content__text-small">
+              I'm Bryan Estrada, a Full Stack programmer from Peru. I invite you
+              to explore my projects.
             </p>
+
+            <div
+              class="content__social-medias d-lg-flex aligns-items-center my-3 d-none"
+            >
+              <div class="content__social-medias__icons">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+              </div>
+              <div class="content__social-medias__icons">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+
+           <!--  <div class="header__arrow d-none d-lg-flex">
+              <div class="arrow"></div>
+              <div class="arrow"></div>
+              <div class="arrow"></div>
+            </div> -->
+          </div>
+          <div class="header__image col-md-6">
+            <img src="img/persona_programando.png" alt="" />
           </div>
         </div>
-        <div class="offcanvas-body justify-content-start">
-          <ul class="navbar-nav justify-content-end">
-            <li class="nav-item my-2 my-lg-0">
-              <a href="#" class="nav-link">Abaout me</a>
-            </li>
-            <li class="nav-item my-2 my-lg-0">
-              <a href="#" class="nav-link">Skills</a>
-            </li>
-            <li class="nav-item my-2 my-lg-0">
-              <a href="#" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item my-2 my-lg-0">
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="offcanvas-footer d-lg-none">
-          <div class="offcanvas-footer__social-medias d-flex aligns-items-center">
-            <div class="offcanvas-footer__social-medias__icons">
-              <a href=""><i class="fa-brands fa-github"></i></a>
-            </div>
-            <div class="offcanvas-footer__social-medias__icons">
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </header>
+    <!-- About Me -->
+    <section id="abaout" class="abaout">
+      <div class="container">
+        <div class="row">
+          <div class="abaout__div col-lg-6">
+            <h2 class="abaout__title">About Me</h2>
+          </div>
+          <div class="abaout__div col-lg-6">
+            <p class="abaout__parrafo">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              voluptas distinctio qui magni ullam nobis aspernatur? Ex a, nam
+              facere aspernatur provident sequi et aliquid adipisci! Porro
+              incidunt eum eos.
+            </p>
+            <p class="abaout__parrafo">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              voluptas distinctio qui magni ullam nobis aspernatur? Ex a, nam
+              facere aspernatur provident sequi et aliquid adipisci! Porro
+              incidunt eum eos.
+            </p>
+
+            <div
+              class="abaout__buttons d-flex justify-content-around aligns-items-center"
+            >
+              <button class="abaout__buttons--block btn">View Works</button>
+              <button class="abaout__buttons--outline btn">Download CV</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="content col-md-6 d-flex justify-content-center aligns-items center flex-column">
-          <h2 class="content__text  ">Hello mate</h2>
-          <h1 class="content__title display-3">
-            I'm Bryan Estrada a <span>Full Stack </span> Developer
-          </h1>
-          <p class="content__text-small">
-            I'm Bryan Estrada, a Full Stack programmer from Peru. I invite you
-            to explore my projects.
-          </p>
+    </section>
 
-          <div class="content__social-medias d-lg-flex aligns-items-center my-3 d-none">
-            <div class="content__social-medias__icons">
-              <a href=""><i class="fa-brands fa-github"></i></a>
-            </div>
-            <div class="content__social-medias__icons">
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+    <!-- Skills -->
+
+    <section class="skills">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div>
+            <h2 class="skills__title">My Skills</h2>
           </div>
 
-          <div class="header__arrow  d-none d-lg-flex">
-            <div class="arrow"></div>
-            <div class="arrow"></div>
-            <div class="arrow"></div>
+          <div class="skills__content">
+            <div class="skills__item">
+             <img src="img/skills/html.png" alt="">
+            </div>
+            <div class="skills__item">
+              <img src="img/skills/css.png" alt="">
+            </div>
+            <div class="skills__item">
+              <img src="img/skills/sass.png" alt="">
+            </div>
+            <div class="skills__item">
+              <img src="img/skills/bootstrap.png" alt="">
+            </div>
+
+            <div class="skills__item">
+              <img src="img/skills/js.png" alt="">
+            </div>
+            <div class="skills__item">
+              <img src="img/skills/ts.png" alt="">
+            </div>
+            <div class="skills__item">
+              <img src="img/skills/git.png" alt="">
+            </div>
+            <div class="skills__item">
+              <img src="img/skills/java.png" alt="">
+            </div>
+            <div class="skills__item">
+              <img src="img/skills/php.png" alt="">
+            </div>
+            <div class="skills__item">
+              <img src="img/skills/laravel.png" alt="">
+            </div>
+            <div class="skills__item">
+              <img src="img/skills/mysql.png" alt="">
+            </div>
+
           </div>
-        </div>
-        <div class="header__image col-md-6">
-          <img src="img/persona_programando.png" alt="" />
         </div>
       </div>
-    </div>
-  </header>
-  <!-- Skills -->
-  <section id="abaout" class="abaout">
-    <div class="container">
-      <div class="row">
-        <div class="abaout__div col-lg-6">
-          <h2 class="abaout__title">About Me</h2>
-        </div>
-        <div class="abaout__div col-lg-6">
-          <p class="abaout__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam voluptas distinctio qui magni ullam
-            nobis aspernatur? Ex a, nam facere aspernatur provident sequi et aliquid adipisci! Porro incidunt eum eos.
-          </p>
-          <p class="abaout__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam voluptas distinctio qui magni ullam
-            nobis aspernatur? Ex a, nam facere aspernatur provident sequi et aliquid adipisci! Porro incidunt eum eos.
-          </p>
+    </section>
 
-          <div class="abaout__buttons d-flex justify-content-around aligns-items-center">
-            <button class="abaout__buttons--block btn">View Works</button>
-            <button class="abaout__buttons--outline btn">Download CV</button>
-          </div>
+    <!-- Projects -->
 
+    <section class="projects">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <h2 class="projects__title">Projects</h2>
         </div>
       </div>
-    </div>
-  </section>
+      
+    </section>
 
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="js/font-awesome/font-awesome-pro.js"></script>
-</body>
 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/font-awesome/font-awesome-pro.js"></script>
+  </body>
 </html>

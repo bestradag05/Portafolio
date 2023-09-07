@@ -9,6 +9,12 @@ $primary-color-dark: #040408;
 $primary-color: #FB982B;
 $color-texto: #ABADB5;
 
+/* $color-fondo: #0a101e;
+$color-fondo-gris: #1c1c1c;
+$primary-color-dark: #040408;
+$primary-color: #f9c542;
+$color-texto: #fff; */
+
 //Generales
 
 *{
@@ -18,11 +24,20 @@ $color-texto: #ABADB5;
     font-family: 'Poppins';
 }
 
+body{
+    background: url(../img/bg-paterns.png) $color-fondo;
+}
+
+
+
 /* Generales */
 @import "general/mediaq";
 @import "general/icons";
 @import "general/buttons";
+@import "general/generals";
 /* Layouts */
 @import "layout/navbar";
 @import "layout/header";
 @import "layout/abaout";
+@import "layout/skills";
+@import "layout/projects";

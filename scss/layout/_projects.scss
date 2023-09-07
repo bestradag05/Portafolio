@@ -1,0 +1,15 @@
+.projects{
+    .projects__title{
+        @extend title;
+
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50%;
+            height: 4px;
+            background: $primary-color;
+        }
+    }
+}

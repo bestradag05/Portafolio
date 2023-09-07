@@ -1,0 +1,65 @@
+.skills{
+    
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%, 0 99%, 0 100%);
+    .skills__title{
+        @extend title;
+        margin: 0 0 50px 0;
+        display: inline-block;
+        
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50%;
+            height: 4px;
+            background: $primary-color;
+        }
+
+
+    }
+
+    .skills__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        flex-flow: row wrap;
+        margin: 20px 0;
+
+        .skills__item{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                max-width: 100%;
+                filter: grayscale(0.8);
+                transition: all .7s;
+                &:hover{
+                    filter: grayscale(0);
+                    transform: scale(1.2) rotate(10deg);
+                }
+            }
+
+            i{
+                font-size: 100px;
+                color: $color-texto;
+            }
+
+            svg{
+                g{
+                    fill: $color-texto;
+                }
+            } 
+
+        }
+
+    }
+
+
+
+}
