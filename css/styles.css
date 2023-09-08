@@ -63,10 +63,11 @@ icons a:hover, header .content .content__social-medias__icons a:hover, nav .cont
 }
 
 title, .projects .projects__title, .skills .skills__title, section .abaout__div .abaout__title {
-  font-size: 2.5vw;
+  font-size: 2.8vw;
   color: #fff;
   position: relative;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 section {
@@ -399,7 +400,8 @@ section .abaout__div .abaout__parrafo {
   text-align: center;
   transition: all 0.5s;
   transition-delay: 0.2s;
-  margin: 0 20px;
+  padding: 0 50px;
+  margin: 0 50px;
   transform: translateX(100%);
 }
 .projects .projects__item:nth-child(even) .projects__item__info h3,
@@ -407,7 +409,8 @@ section .abaout__div .abaout__parrafo {
   padding: 20px;
 }
 .projects .projects__item:nth-child(even) .projects__item__info h3 {
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
@@ -416,17 +419,7 @@ section .abaout__div .abaout__parrafo {
   font-weight: 200;
   letter-spacing: 1px;
   color: #fff;
-}
-.projects .projects__item:nth-child(even) .projects__item__info .tecnologys {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-.projects .projects__item:nth-child(even) .projects__item__info .tecnologys img {
-  width: 30px;
-  height: 30px;
-  max-width: 100%;
+  text-align: justify;
 }
 .projects .projects__item:nth-child(odd) .projects__item__img {
   position: relative;
@@ -455,7 +448,8 @@ section .abaout__div .abaout__parrafo {
   position: relative;
   z-index: -1;
   text-align: center;
-  margin: 0 20px;
+  padding: 0 50px;
+  margin: 0 50px;
   transition: all 0.5s;
   transition-delay: 0.2s;
   transform: translateX(-100%);
@@ -465,7 +459,8 @@ section .abaout__div .abaout__parrafo {
   padding: 20px;
 }
 .projects .projects__item:nth-child(odd) .projects__item__info h3 {
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
@@ -474,21 +469,25 @@ section .abaout__div .abaout__parrafo {
   font-weight: 200;
   letter-spacing: 1px;
   color: #fff;
+  text-align: justify;
 }
-.projects .projects__item:nth-child(odd) .projects__item__info .tecnologys {
+.projects .projects__item .tecnologys {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
 }
-.projects .projects__item:nth-child(odd) .projects__item__info .tecnologys img {
-  width: 30px;
-  height: 30px;
+.projects .projects__item .tecnologys img {
+  width: 45px;
+  height: 45px;
   max-width: 100%;
+  box-shadow: none;
 }
 .projects .projects__item img {
-  border-radius: 10px;
+  /*  border-radius: 10px; */
   box-shadow: 0 0 20px 2px rgb(0, 0, 0);
+  width: 628px;
+  height: 357px;
 }
 
 /*# sourceMappingURL=styles.css.map */
