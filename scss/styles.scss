@@ -25,7 +25,7 @@ $color-texto: #fff;
 }
 
 body{
-    background: url(../img/bg-paterns.png) $color-fondo;
+    background: $color-fondo;
 }
 
 
@@ -41,3 +41,5 @@ body{
 @import "layout/abaout";
 @import "layout/skills";
 @import "layout/projects";
+@import "layout/contact";
+@import "layout/footer";
