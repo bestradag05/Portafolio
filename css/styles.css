@@ -294,6 +294,17 @@ section .abaout__div .abaout__parrafo {
   color: #fff;
 }
 .skills {
+  position: relative;
+}
+.skills::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: soft-light;
+  content: "";
+  background: url(../../img/home-banner.webp) 50%;
   background-size: cover;
 }
 .skills .skills__title {
@@ -489,6 +500,8 @@ section .abaout__div .abaout__parrafo {
 .projects .projects__item img {
   border-radius: 10px;
   box-shadow: 0 0 20px 2px rgb(0, 0, 0);
+  width: 628px;
+  height: 357px;
 }
 
 /*# sourceMappingURL=styles.css.map */
