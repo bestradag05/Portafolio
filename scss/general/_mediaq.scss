@@ -1,0 +1,73 @@
+//Media Query
+
+@mixin desktop {
+    @media screen and (max-width: 1100px) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media screen and (max-width: 990px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: 550px) {
+        @content;
+    }
+}
+
+
+//DESKTOP
+@include desktop(){
+
+
+
+   
+
+}
+
+
+//TABLETS
+
+@include tablets(){
+    
+.navbar-nav{   
+    li{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 80px;
+        &::before{
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: $primary-color;
+            transition: all .5s;
+        }
+
+        &:hover::before{
+            width: 20px;
+        }
+
+
+        a{
+            padding-left: 10px!important;
+
+            &::after{
+                content: none!important;
+            }
+        }
+       
+    }
+ }
+}
+
+//PHONE
+
+@include phone(){
+    
+   
+}

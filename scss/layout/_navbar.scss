@@ -1,0 +1,107 @@
+nav {
+  position: fixed!important;
+  width: 100%;
+  top: 0;
+  background: #0a101e;
+  box-shadow: 0 0 20px 5px #0a0a0a;
+  z-index: 10;
+
+  .container {
+    
+    .navbar-brand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-texto;
+
+      i {
+        margin-right: 5px;
+      }
+
+      span {
+        color: $primary-color;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+
+    .navbar-toggler:focus{
+        box-shadow: none!important;
+        border: none;
+    }
+    .offcanvas {
+
+        background: $color-fondo;
+
+        .offcanvas-header__img{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 50%;
+                height: auto;
+                border-radius: 50%;
+                background: #fff;
+                border: 5px solid $color-fondo-gris;
+            }
+        }
+
+        .offcanvas-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            overflow-y: none!important;
+        }
+
+        .offcanvas-footer{
+            margin: 2px;
+            .offcanvas-footer__social-medias{
+                display: flex;
+                justify-content: center;
+                .offcanvas-footer__social-medias__icons{
+                    @extend icons;
+                }
+            }
+        }
+
+      ul {
+        width: 100%; 
+        li {
+          a.nav-link {
+            color: $color-texto;
+            padding: 0 20px;
+
+            &::after {
+              content: "";
+              display: block;
+              width: 0;
+              height: 3px;
+              background: $primary-color;
+              transition: all 0.5s;
+            }
+
+            &:hover {
+              color: $primary-color;
+            }
+
+            &:hover::after {
+              width: 60%;
+            }
+
+            &:focus {
+              color: $primary-color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

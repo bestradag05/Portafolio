@@ -1,0 +1,69 @@
+.footer{
+
+    .foooter__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-texto;
+
+        p{
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+
+    .footer__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-texto;
+        height: 100%;
+
+  
+        i {
+          margin-right: 5px;
+        }
+  
+        span {
+          color: $primary-color;
+        }
+  
+        p {
+          margin-bottom: 0;
+          
+        }
+      }
+
+
+    .footer__social-medias__icons{
+        @extend icons;
+        a{
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+
+
+            i {
+                font-size: 2vmin;
+              }
+
+
+              &:hover{
+                background: none;
+            }
+
+        }
+
+        
+
+    }
+
+
+}
