@@ -215,7 +215,7 @@ header .header__image img {
   padding: 0 50px;
 }
 .abaout .abaout__div:nth-child(1) {
-  background: url(../../img/about_shap_bg.png);
+  background: url("../../../img/about_me.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 290px;
