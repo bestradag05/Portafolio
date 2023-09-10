@@ -1,5 +1,10 @@
 nav {
- /*  background: $color-fondo-gris; */
+  position: fixed!important;
+  width: 100%;
+  top: 0;
+  background: #0a101e;
+  box-shadow: 0 0 20px 5px #0a0a0a;
+  z-index: 10;
 
   .container {
     
