@@ -6,7 +6,7 @@ header {
   padding: 0 50px;
   margin: 70px 0 0 0;
   background: url(../img/fondo.jpg) no-repeat;
-  object-fit: cover;
+  background-size: cover;
 
   .content {
     .content--title {
@@ -49,6 +49,7 @@ header {
     img {
       width: auto;
       height: auto;
+      object-fit: cover;
     }
   }
 

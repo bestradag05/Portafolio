@@ -174,7 +174,7 @@ header {
   padding: 0 50px;
   margin: 70px 0 0 0;
   background: url(../img/fondo.jpg) no-repeat;
-  object-fit: cover;
+  background-size: cover;
 }
 header .content .content--title {
   color: #fff;
@@ -203,6 +203,7 @@ header .header__image {
 header .header__image img {
   width: auto;
   height: auto;
+  object-fit: cover;
 }
 
 .abaout {
