@@ -91,8 +91,8 @@
     </nav>
     <!-- Header -->
     <header class="header">
-      <div class="container">
-        <div class="row">
+      <div class="container h-100">
+        <div class="row h-100">
           <div
             class="content col-md-6 d-flex justify-content-center aligns-items center flex-column"
           >
@@ -122,8 +122,8 @@
               </div>
             </div>
           </div>
-          <div class="header__image col-md-6">
-            <img src="img/persona_programando.png" alt="" />
+          <div class="header__image col-md-6 h-100">
+            <img src="img/portada.png" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
@@ -239,7 +239,7 @@
               <div class="col-lg-6 projects__item__img">
                 <a href="https://www.orbeaduanas.com/" target="_blank">
                   <img
-                    src="img/inicio-orbeaduanas.png"
+                    src="img/projects/inicio-orbeaduanas.png"
                     class="img-fluid"
                     alt=""
                   />
@@ -269,7 +269,11 @@
             </div>
             <div class="projects__item">
               <div class="col-lg-6 projects__item__img">
-                <img src="img/tienda-virtual.png" class="img-fluid" alt="" />
+                <img
+                  src="img/projects/tienda-virtual.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
               <div class="col-lg-6 projects__item__info">
                 <h3>Tienda Virtual</h3>
@@ -295,7 +299,11 @@
 
             <div class="projects__item">
               <div class="col-lg-6 projects__item__img">
-                <img src="img/contrecargo.png" class="img-fluid" alt="" />
+                <img
+                  src="img/projects/contrecargo.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
               <div class="col-lg-6 projects__item__info">
                 <h3>Contrecargo S.A.C</h3>
@@ -374,6 +382,7 @@
                   <div class="content__form__item">
                     <i class="fa-solid fa-user-tie"></i>
                     <input
+                      autocomplete="off"
                       id="name"
                       type="text"
                       class="form-control"
@@ -382,8 +391,9 @@
                   </div>
 
                   <div class="content__form__item">
-                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                    <i id="prueba" class="fa-sharp fa-solid fa-envelope"></i>
                     <input
+                      autocomplete="off"
                       id="email"
                       type="text"
                       class="form-control"
@@ -456,7 +466,12 @@
       </div>
     </footer>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="js/font-awesome/font-awesome-pro.js"></script>
     <script src="js/app.js"></script>
   </body>

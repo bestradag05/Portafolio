@@ -1,11 +1,12 @@
 header {
-  height: 100vh;
+  height: calc(100vh - 70px);
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 50px;
+  padding: 0 50px;
   margin: 70px 0 0 0;
-  /* background: $color-fondo; */
+  background: url(../img/fondo.jpg) no-repeat;
+  object-fit: cover;
 
   .content {
     .content--title {
@@ -42,13 +43,11 @@ header {
   .header__image {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: $primary-color;
-    border-radius: 80%;
+
+    position: relative;
 
     img {
-      max-width: 100%;
-      /* width: 400px; */
+      width: auto;
       height: auto;
     }
   }

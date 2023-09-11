@@ -167,13 +167,14 @@ nav .container .offcanvas ul li a.nav-link:focus {
 }
 
 header {
-  height: 100vh;
+  height: calc(100vh - 70px);
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 50px;
+  padding: 0 50px;
   margin: 70px 0 0 0;
-  /* background: $color-fondo; */
+  background: url(../img/fondo.jpg) no-repeat;
+  object-fit: cover;
 }
 header .content .content--title {
   color: #fff;
@@ -197,13 +198,10 @@ header .content .content__text-small {
 header .header__image {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: #f9c542;
-  border-radius: 80%;
+  position: relative;
 }
 header .header__image img {
-  max-width: 100%;
-  /* width: 400px; */
+  width: auto;
   height: auto;
 }
 
@@ -215,7 +213,7 @@ header .header__image img {
   padding: 0 50px;
 }
 .abaout .abaout__div:nth-child(1) {
-  background: url("../../../img/about_me.png");
+  background: url("../img/about_me.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 290px;
@@ -287,7 +285,7 @@ header .header__image img {
   width: 100%;
   mix-blend-mode: soft-light;
   content: "";
-  background: url(../../img/home-banner.webp) 50%;
+  background: url(../img/skills_banner.webp) 50%;
   background-size: cover;
   z-index: -1;
 }
@@ -462,7 +460,7 @@ header .header__image img {
 }
 
 .contact {
-  background: url(../../img/wave.svg);
+  background: url(../img/contact_wave.svg);
   background-size: cover;
   width: 100%;
   padding: 45px 0;
@@ -546,6 +544,7 @@ header .header__image img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-flow: row;
   width: 100%;
   max-height: 120px;
   padding-bottom: 20px;
