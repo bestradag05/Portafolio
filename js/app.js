@@ -1,34 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+ 
   const tooltipTriggerList = document.querySelectorAll(
     '[data-bs-toggle="tooltip"]'
   );
+
+  const info = {
+    name: '',
+    email: '',
+    message: ''
+  }
+
 
   //variables
 
   const name = document.querySelector("#name");
   const email = document.querySelector("#email");
   const message = document.querySelector("#message");
+  const form = document.querySelector("#formContact");
 
-  name.addEventListener("blur", validar);
-  email.addEventListener("blur", validar);
-  message.addEventListener("blur", validar);
+  name.addEventListener("blur", validate);
+  email.addEventListener("blur", validate);
+  message.addEventListener("blur", validate);
+  form.addEventListener("submit", validateForm)
 
-  function validar(e) {
+  function validate(e) {
+
+    clearAlert(e.target);
+
     if (e.target.value.trim() === "") {
       showAlert(e.target, `${e.target.id} is required`);
       return;
     }
 
-    if (e.target.id === "email") {
-      validateMail(e.target.id);
+    if (e.target.id === "email" && !validateMail(e.target.value)) {
+        showAlert(e.target, "the email is not valid ");
+        return;
     }
 
     clearAlert(e.target);
+
+    info[e.target.id] = e.target.value.trim().toLowerCase();
+
   }
 
   function showAlert(input, message) {
-    input.style.borderBottom = "1px solid #ff3434";
-    input.previousElementSibling.style.border = "3px solid #ff3434";
+    console.log(input);
 
     tooltip(input, message);
   }
@@ -48,6 +65,14 @@ function validateMail(email) {
   const resultado = regex.test(email); // Valida el email recibido
 
   return resultado;
+}
+
+
+function validateForm(e){
+  e.preventDefault();
+
+  
+ 
 }
 
 function clearTooltip(input) {

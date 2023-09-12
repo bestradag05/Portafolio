@@ -24,7 +24,7 @@
                 @include buttons($primary-color, white);
 
                 &:hover{
-                    @include buttons(transparent, $primary-color);
+                    @include buttons(#d4a01c, $color-texto);
                 }
 
             }

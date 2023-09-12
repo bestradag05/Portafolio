@@ -236,8 +236,8 @@ header .header__image img {
   box-shadow: 0 0 20px 5px #0a101e;
 }
 .abaout .abaout__div:nth-child(2) .abaout__buttons--block:hover {
-  background: transparent;
-  color: #f9c542;
+  background: #d4a01c;
+  color: #fff;
   border: 2px solid #f9c542;
   padding: 15px;
   margin: 20px 15px;
