@@ -16,6 +16,14 @@ body {
   background: #0a101e;
 }
 
+.tooltip-inner {
+  background: #0a101e;
+}
+
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before {
+  border-left-color: #0a101e;
+}
+
 /* Generales */
 @media screen and (max-width: 990px) {
   .navbar-nav li {
@@ -540,6 +548,17 @@ header .header__image img {
   margin: 20px 15px;
   transition: all 0.5s;
   box-shadow: 0 0 20px 5px #0a101e;
+  width: 125px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contact .contact__container .container__form .content__form .btn-confirm {
+  background: #0f6b0f !important;
+  border: 1px solid #0f6b0f;
+  transition: all 0.5s;
 }
 .contact .contact__container .container__form .content__form .content__form__item {
   display: flex;

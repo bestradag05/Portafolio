@@ -29,6 +29,14 @@ body{
 }
 
 
+.tooltip-inner{
+    background: #0a101e;
+}
+
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before{
+    border-left-color: #0a101e;
+}
+
 
 /* Generales */
 @import "general/mediaq";

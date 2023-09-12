@@ -92,7 +92,20 @@
                 }
     
                 button{
-                    @include buttons($primary-color, $color-texto)
+                    @include buttons($primary-color, $color-texto);
+                    width: 125px;
+                    height: 53px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    
+                }
+
+                .btn-confirm{
+                    background: #0f6b0f!important;
+                    border: 1px solid #0f6b0f;
+                    transition: all .5s;
                 }
     
                 .content__form__item {
