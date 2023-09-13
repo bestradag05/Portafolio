@@ -89,6 +89,20 @@ section {
   padding: 70px 0 0 0;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Layouts */
 nav {
   position: fixed !important;
@@ -348,123 +362,6 @@ header .header__image img {
   width: 50%;
   height: 4px;
   background: #f9c542;
-}
-.projects .projects__item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px;
-  margin: 50px 0;
-}
-.projects .projects__item:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.projects .projects__item:nth-child(even) .projects__item__img {
-  position: relative;
-}
-.projects .projects__item:nth-child(even) .projects__item__img:hover ~ div {
-  transform: translateX(0);
-  margin: 0 50px;
-  background: #121d36;
-  box-shadow: 0 0 30px 2px #000;
-}
-.projects .projects__item:nth-child(even) .projects__item__info {
-  position: relative;
-  z-index: -1;
-  text-align: center;
-  padding: 0 50px;
-  transform: translateX(100%);
-  transition: all 0.5s;
-  transition-delay: 0.2s;
-  background: transparent;
-  border-radius: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.projects .projects__item:nth-child(even) .projects__item__info h3,
-.projects .projects__item:nth-child(even) .projects__item__info p {
-  padding: 10px;
-}
-.projects .projects__item:nth-child(even) .projects__item__info h3 {
-  font-size: 25px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: "Merriweather";
-  padding: 10px 0;
-}
-.projects .projects__item:nth-child(even) .projects__item__info p {
-  font-weight: 200;
-  font-size: 14px;
-  color: #fff;
-  text-align: justify;
-  line-height: 25px;
-  font-family: "Merriweather";
-  padding: 0 0 0 0;
-}
-.projects .projects__item:nth-child(odd) .projects__item__img {
-  position: relative;
-}
-.projects .projects__item:nth-child(odd) .projects__item__img:hover ~ div {
-  transform: translateX(0);
-  margin: 0 50px;
-  background: #121d36;
-  box-shadow: 0 0 30px 2px #000;
-}
-.projects .projects__item:nth-child(odd) .projects__item__info {
-  position: relative;
-  z-index: -1;
-  text-align: center;
-  padding: 0 50px;
-  transition: all 0.5s;
-  transition-delay: 0.2s;
-  transform: translateX(-100%);
-  background: transparent;
-  border-radius: 20px;
-  padding: 20px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.projects .projects__item:nth-child(odd) .projects__item__info h3 {
-  font-size: 25px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: "Merriweather";
-  padding: 10px 0;
-}
-.projects .projects__item:nth-child(odd) .projects__item__info p {
-  font-weight: 200;
-  font-size: 14px;
-  color: #fff;
-  text-align: justify;
-  line-height: 25px;
-  font-family: "Merriweather";
-}
-.projects .projects__item .tecnologys {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 10px;
-  border-radius: 10px;
-}
-.projects .projects__item .tecnologys img {
-  width: 30px;
-  height: 30px;
-  max-width: 100%;
-  box-shadow: none;
-}
-.projects .projects__item img {
-  /*  border-radius: 10px; */
-  box-shadow: 0 0 20px 2px rgb(0, 0, 0);
-  width: 628px;
-  height: 357px;
 }
 
 .contact {
