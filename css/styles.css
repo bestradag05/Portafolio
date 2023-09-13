@@ -86,7 +86,7 @@ title, .contact .contact__title, .projects .projects__title, .skills .skills__ti
 }
 
 section {
-  padding: 80px 0;
+  padding: 70px 0 0 0;
 }
 
 /* Layouts */
@@ -329,7 +329,6 @@ header .header__image img {
   align-items: center;
 }
 .skills .skills__content .skills__item img {
-  max-width: 100%;
   transition: all 0.7s;
 }
 .skills .skills__content .skills__item img:hover {
