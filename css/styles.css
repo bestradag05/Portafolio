@@ -93,6 +93,32 @@ section {
   width: 100%;
   height: 100%;
 }
+.swiper .swiper-slide {
+  overflow: hidden;
+}
+.swiper .swiper-slide .tecnologys {
+  position: absolute;
+  transform: translateY(-110%);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  background: rgb(14, 37, 91);
+  background: linear-gradient(0deg, rgb(14, 37, 91) 0%, rgb(5, 49, 150) 100%);
+  box-shadow: 7px 5px 10px 5px #000;
+  transition: all 0.5s;
+}
+.swiper .swiper-slide .tecnologys img {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  z-index: 1;
+}
+.swiper .swiper-slide-active .tecnologys {
+  transform: translateY(0);
+}
 
 .swiper-button-next,
 .swiper-button-prev {

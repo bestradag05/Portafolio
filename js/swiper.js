@@ -4,12 +4,8 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 50,
   initialSlide: 0,
-  autoHeight: true,
-  centeredSlidesBounds: true,
-  preventClicks: true,
   loop: true,
-  zoom: true,
-  autoHeight: true,
+  loopedSlides: 2,
   hideOnClick: true,
   coverflowEffect: {
     rotate: 0,
