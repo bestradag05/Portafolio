@@ -46,8 +46,8 @@ nav {
             align-items: center;
 
             img{
-                width: 150px!important;
-                height: 200px!important;
+                width: 125px!important;
+                height: 150px!important;
                 border-radius: 50%;
                 padding: 20px;
                 border: 5px solid $primary-color;
@@ -55,6 +55,7 @@ nav {
 
             .offcanvas__title{
               text-align: center;
+              font-size: 16px;
               color: #fff;
 
               span{
