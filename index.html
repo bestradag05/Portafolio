@@ -1,463 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bryan Estrada Gómez</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <!--     <link
-      rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    /> -->
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
 
-  <body>
-    <!-- Navbar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bryan Estrada Gómez</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+</head>
 
-    <nav class="navbar navbar-expand-lg">
-      <div class="container py-2">
-        <a class="navbar-brand" href="#">
-          <i class="fa-solid fa-code"></i>
-          <p>Beg<span>Code</span></p>
-        </a>
+<body>
+  <!-- Navbar -->
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
-        >
-          <i
-            class="fa-solid fa-bars-sort fa-bounce fa-lg"
-            style="color: #ffffff"
-          ></i>
-        </button>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container py-2">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-code"></i>
+        <p>Beg<span>Code</span></p>
+      </a>
 
-        <div
-          class="offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <div class="offcanvas-header__img">
-              <img src="img/persona_programando.png" alt="" />
-              <a class="navbar-brand" href="#">
-                <i class="fa-solid fa-code"></i>
-                <p>Beg<span>Code</span></p>
-              </a>
-              <p class="p-2 text-justify text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                nesciunt, quia optio sunt odio adipisci animi maxime
-              </p>
-            </div>
-          </div>
-          <div class="offcanvas-body justify-content-start">
-            <ul class="navbar-nav justify-content-end">
-              <li class="nav-item my-2 my-lg-0">
-                <a href="#abaout" class="nav-link">Abaout me</a>
-              </li>
-              <li class="nav-item my-2 my-lg-0">
-                <a href="#skills" class="nav-link">Skills</a>
-              </li>
-              <li class="nav-item my-2 my-lg-0">
-                <a href="#projects" class="nav-link">Projects</a>
-              </li>
-              <li class="nav-item my-2 my-lg-0">
-                <a href="#contact" class="nav-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="offcanvas-footer d-lg-none">
-            <div
-              class="offcanvas-footer__social-medias d-flex aligns-items-center"
-            >
-              <div class="offcanvas-footer__social-medias__icons">
-                <a href=""><i class="fa-brands fa-github"></i></a>
-              </div>
-              <div class="offcanvas-footer__social-medias__icons">
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- Header -->
-    <header class="header">
-      <div class="container">
-        <div class="row">
-          <div
-            class="content col-md-6 d-flex justify-content-center aligns-items center flex-column"
-          >
-            <h2 class="content__text">Hello mate</h2>
-            <h1 class="content__title display-3">
-              I'm Bryan Estrada a <span>Full Stack </span> Developer
-            </h1>
-            <p class="content__text-small">
-              I'm Bryan Estrada, a Full Stack programmer from Peru. I invite you
-              to explore my projects.
-            </p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars-sort fa-bounce fa-lg" style="color: #ffffff"></i>
+      </button>
 
-            <div
-              class="content__social-medias d-lg-flex aligns-items-center my-3 d-none"
-            >
-              <div class="content__social-medias__icons">
-                <a href="https://github.com/bestradag05" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-              <div class="content__social-medias__icons">
-                <a
-                  href="https://www.linkedin.com/in/bryan-david-estrada-gomez-68a3a7192"
-                  target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="header__image col-md-6">
-            <img src="img/persona_programando.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- About Me -->
-    <section id="abaout" class="abaout">
-      <div class="container">
-        <div class="row">
-          <div class="abaout__div col-lg-6">
-            <h2 class="abaout__title">About Me</h2>
-          </div>
-          <div class="abaout__div col-lg-6">
-            <p class="abaout__parrafo">
-              Bachelor in Systems Engineering with experience in technical
-              support for more than 2 years. Passionate about programming and
-              web development, always looking for new challenges and
-              opportunities to grow in this exciting field.
-            </p>
-            <p class="abaout__parrafo">
-              My primary focus is on JavaScript, Java, and PHP, and I have
-              gained a solid knowledge of each of them. I consider myself a
-              self-taught person, constantly learning and improving my skills to
-              offer innovative and efficient solutions. Let's connect and
-              explore the possibilities of working together!
-            </p>
-
-            <div
-              class="abaout__buttons d-flex justify-content-around aligns-items-center"
-            >
-              <a
-                href="https://github.com/bestradag05"
-                target="_blank"
-                class="abaout__buttons--block btn"
-                >View Works</a
-              >
-              <a href="" class="abaout__buttons--outline btn">Download CV</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-
-    <section id="skills" class="skills">
-      <div class="container pb-5">
-        <div class="row justify-content-center text-center">
-          <div>
-            <h2 class="skills__title">My Skills</h2>
-          </div>
-
-          <div class="skills__content">
-            <div class="skills__item">
-              <img src="img/skills/html.png" alt="" />
-              <p>Htm5</p>
-            </div>
-            <div class="skills__item">
-              <img src="img/skills/css.png" alt="" />
-              <p>Css 3</p>
-            </div>
-            <div class="skills__item">
-              <img src="img/skills/sass.png" alt="" />
-              <p>Sass</p>
-            </div>
-            <div class="skills__item">
-              <img src="img/skills/bootstrap.png" alt="" />
-              <p>Bootstrap</p>
-            </div>
-
-            <div class="skills__item">
-              <img src="img/skills/js.png" alt="" />
-              <p>JavaScript</p>
-            </div>
-            <div class="skills__item">
-              <img src="img/skills/ts.png" alt="" />
-              <p>TypeScript</p>
-            </div>
-            <div class="skills__item">
-              <img src="img/skills/git.png" alt="" />
-              <p>Git</p>
-            </div>
-            <div class="skills__item">
-              <img src="img/skills/java.png" alt="" />
-              <p>Java</p>
-            </div>
-            <div class="skills__item">
-              <img src="img/skills/php.png" alt="" />
-              <p>Php</p>
-            </div>
-            <div class="skills__item">
-              <img src="img/skills/laravel.png" alt="" />
-              <p>Laravel</p>
-            </div>
-            <div class="skills__item">
-              <img src="img/skills/mysql.png" alt="" />
-              <p>MySQL</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="row">
-          <div class="text-center">
-            <h2 class="projects__title d-inline-block">Projects</h2>
-          </div>
-          <div class="projects__content">
-            <div class="projects__item">
-              <div class="col-lg-6 projects__item__img">
-                <a href="https://www.orbeaduanas.com/" target="_blank">
-                  <img
-                    src="img/inicio-orbeaduanas.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="col-lg-6 projects__item__info">
-                <h3>Orbe Aduanas S.A.C</h3>
-                <p>
-                  Developed a website using HTML5, CSS3, Bootstrap and
-                  JavaScript for a customs agency with more than 8 years of
-                  experience.
-                </p>
-                <p>
-                  The site presents information about the company, its services
-                  and offers a "Contact Us" section with profiles of each
-                  business advisor to facilitate communication with clients. The
-                  design is modern and responsive, providing an attractive and
-                  accessible user experience on diverse devices.
-                </p>
-                <div class="tecnologys">
-                  <img src="img/skills/html.png" alt="" />
-                  <img src="img/skills/css.png" alt="" />
-                  <img src="img/skills/bootstrap.png" alt="" />
-                  <img src="img/skills/js.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="projects__item">
-              <div class="col-lg-6 projects__item__img">
-                <img src="img/tienda-virtual.png" class="img-fluid" alt="" />
-              </div>
-              <div class="col-lg-6 projects__item__info">
-                <h3>Tienda Virtual</h3>
-                <p>
-                  Virtual store template, developed with HTML, CSS and SASS, is
-                  designed for a seamless online shopping experience. It is
-                  fully responsive, meaning it adapts to any device.
-                </p>
-                <p>
-                  Its intuitive and customizable interface, along with its fast
-                  loading speed, make it ideal for any type of online store.
-                  With this template, you can create an attractive and
-                  functional store in no time.
-                </p>
-                <div class="tecnologys">
-                  <img src="img/skills/html.png" alt="" />
-                  <img src="img/skills/css.png" alt="" />
-                  <img src="img/skills/sass.png" alt="" />
-                  <img src="img/skills/bootstrap.png" alt="" />
-                </div>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <div class="col-lg-6 projects__item__img">
-                <img src="img/contrecargo.png" class="img-fluid" alt="" />
-              </div>
-              <div class="col-lg-6 projects__item__info">
-                <h3>Contrecargo S.A.C</h3>
-                <p>
-                  Website developed for the logistics company Contrecargo S.A.C
-                  using HTML, CSS, Bootstrap and JavaScript technologies.
-                </p>
-                <p>
-                  The page is fully responsive, responsive, easy to navigate and
-                  loads quickly. It includes features such as forms,
-                  comprehensive service information, and a contact section. This
-                  website improves Contrecargo's online presence and facilitates
-                  communication with customers.
-                </p>
-                <div class="tecnologys">
-                  <img src="img/skills/html.png" alt="" />
-                  <img src="img/skills/css.png" alt="" />
-                  <img src="img/skills/bootstrap.png" alt="" />
-                  <img src="img/skills/js.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="text-center">
-            <h2 class="contact__title d-inline-block">Contact Me</h2>
-          </div>
-
-          <div class="contact__container row justify-content-start">
-            <div class="col-lg-4 contact__info">
-              <h3>Contact Info</h3>
-
-              <div class="contact__info__item">
-                <div class="contact__info__item__icon">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="contact__info__item__text">
-                  <span>Mail us</span>
-                  <p>bestradag05@gmail.com</p>
-                  <p>bestradag0511@gmail.com</p>
-                </div>
-              </div>
-
-              <div class="contact__info__item">
-                <div class="contact__info__item__icon">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="contact__info__item__text">
-                  <span>Contact us</span>
-                  <p>+51 977834697</p>
-                </div>
-              </div>
-
-              <div class="contact__info__item">
-                <div class="contact__info__item__icon">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div class="contact__info__item__text">
-                  <span>Location</span>
-                  <p>Av.Revolucion, Villa el salvador, Lima - Perú</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 container__form">
-              <div class="content__form">
-                <h3 class="my-4">Let’s work together.</h3>
-                <form id="formContact">
-                  <div class="content__form__item">
-                    <i class="fa-solid fa-user-tie"></i>
-                    <input
-                      id="name"
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Name..."
-                    />
-                  </div>
-
-                  <div class="content__form__item">
-                    <i class="fa-sharp fa-solid fa-envelope"></i>
-                    <input
-                      id="email"
-                      type="text"
-                      class="form-control"
-                      placeholder="Email Adress..."
-                    />
-                  </div>
-
-                  <div class="content__form__item">
-                    <i class="fa-sharp fa-solid fa-messages"></i>
-                    <textarea
-                      id="message"
-                      type=""
-                      class="form-control"
-                      placeholder="Your message..."
-                    ></textarea>
-                  </div>
-
-                  <button class="btn" type="submit">
-                    <i class="fa-sharp fa-solid fa-paper-plane-top"></i>
-                    Send
-                  </button>
-                </form>
-              </div>
-              <div class="content__map">
-                <iframe
-                  id="map"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=-76.9222354888916%2C-12.241493747320051%2C-76.91869497299196%2C-12.239197546388361&amp;layer=mapnik&amp;marker=-12.240345649349695%2C-76.92046523094177"
-                >
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <div class="offcanvas-header__img">
+            <img src="img/portada-lg.png" class="img-fluid" alt="" />
             <a class="navbar-brand" href="#">
               <i class="fa-solid fa-code"></i>
               <p>Beg<span>Code</span></p>
             </a>
+            <h1 class="offcanvas__title">
+              I'm Bryan Estrada a <span>Junior Developer</span> Developer
+            </h1>
           </div>
-          <div class="col-lg-4 foooter__text">
-            <p>&copy; 2023 Bryan Estrada. All rights reserved.</p>
+        </div>
+        <div class="offcanvas-body justify-content-start">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item my-2 my-lg-0">
+              <a href="#abaout" class="nav-link">Abaout me</a>
+            </li>
+            <li class="nav-item my-2 my-lg-0">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item my-2 my-lg-0">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item my-2 my-lg-0">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="offcanvas-footer d-lg-none">
+            <div class="offcanvas-footer__social-medias__icons">
+              <a href="https://github.com/bestradag05" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="offcanvas-footer__social-medias__icons">
+              <a href="https://www.linkedin.com/in/bryan-david-estrada-gomez-68a3a7192" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="offcanvas-footer__social-medias__icons">
+              <a href="https://www.facebook.com/profile.php?id=100009390402326&sk=about" target="_blank"><i
+                  class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="offcanvas-footer__social-medias__icons">
+              <a href="https://www.tiktok.com/@bdeg05?is_from_webapp=1&sender_device=pc" target="_blank"><i
+                  class="fa-brands fa-tiktok"></i></a>
+            </div>
+
           </div>
-          <div class="col-lg-4 footer__icon">
-            <div
-              class="footer__social-medias d-lg-flex aligns-items-center my-3 d-none"
-            >
-              <div class="footer__social-medias__icons">
-                <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="content col-lg-6 mt-5 mt-lg-0 text-center text-lg-start">
+          <h2 class="content__text">Hello mate</h2>
+          <h1 class="content__title display-4">
+            I'm Bryan Estrada a <span>Junior Developer</span> Developer
+          </h1>
+          <p class="content__text-small">
+            I'm Bryan Estrada, a Full Stack programmer from Peru. I invite you
+            to explore my projects.
+          </p>
+          <div class="content__social-medias d-lg-flex aligns-items-center my-3 d-none">
+            <div class="content__social-medias__icons">
+              <a href="https://github.com/bestradag05" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="content__social-medias__icons">
+              <a href="https://www.linkedin.com/in/bryan-david-estrada-gomez-68a3a7192" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__image col-lg-6">
+          <img src="img/portada-lg.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About Me -->
+  <section id="abaout" class="abaout">
+    <div class="container">
+      <div class="row">
+        <div class="abaout__div col-lg-6 justify-content-center justify-content-lg-end ">
+          <h2 class="abaout__title">About Me</h2>
+        </div>
+        <div class="abaout__div col-lg-6">
+          <p class="abaout__parrafo">
+            Bachelor in Systems Engineering with experience in technical
+            support for more than 2 years. Passionate about programming and
+            web development, always looking for new challenges and
+            opportunities to grow in this exciting field.
+          </p>
+          <p class="abaout__parrafo">
+            My primary focus is on JavaScript, Java, and PHP, and I have
+            gained a solid knowledge of each of them. I consider myself a
+            self-taught person, constantly learning and improving my skills to
+            offer innovative and efficient solutions. Let's connect and
+            explore the possibilities of working together!
+          </p>
+
+          <div class="abaout__buttons d-flex justify-content-around aligns-items-center my-3">
+            <a href="https://github.com/bestradag05" target="_blank" class="abaout__buttons--block btn">View Works</a>
+            <a href="documents/Bryan_Estrada_Gomez.pdf" target="_blank" class="abaout__buttons--outline btn">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+
+  <section id="skills" class="skills">
+    <div class="container pb-5">
+      <div class="row justify-content-center text-center">
+        <div>
+          <h2 class="skills__title">My Skills</h2>
+        </div>
+
+        <div class="skills__content">
+          <div class="skills__item">
+            <img src="img/skills/html.png" class="img-fluid" alt="" />
+            <p>Htm5</p>
+          </div>
+          <div class="skills__item">
+            <img src="img/skills/css.png" class="img-fluid" alt="" />
+            <p>Css 3</p>
+          </div>
+          <div class="skills__item">
+            <img src="img/skills/sass.png" class="img-fluid" alt="" />
+            <p>Sass</p>
+          </div>
+          <div class="skills__item">
+            <img src="img/skills/bootstrap.png" class="img-fluid" alt="" />
+            <p>Bootstrap</p>
+          </div>
+
+          <div class="skills__item">
+            <img src="img/skills/js.png" class="img-fluid" alt="" />
+            <p>JavaScript</p>
+          </div>
+          <div class="skills__item">
+            <img src="img/skills/ts.png" class="img-fluid" alt="" />
+            <p>TypeScript</p>
+          </div>
+          <div class="skills__item">
+            <img src="img/skills/git.png" class="img-fluid" alt="" />
+            <p>Git</p>
+          </div>
+          <div class="skills__item">
+            <img src="img/skills/java.png" class="img-fluid" alt="" />
+            <p>Java</p>
+          </div>
+          <div class="skills__item">
+            <img src="img/skills/php.png" class="img-fluid" alt="" />
+            <p>Php</p>
+          </div>
+          <div class="skills__item">
+            <img src="img/skills/laravel.png" class="img-fluid" alt="" />
+            <p>Laravel</p>
+          </div>
+          <div class="skills__item">
+            <img src="img/skills/mysql.png" class="img-fluid" alt="" />
+            <p>MySQL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+
+  <section id="projects" class="projects pb-5">
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="text-center">
+          <h2 class="projects__title d-inline-block">Projects</h2>
+        </div>
+        <div class="projects__content px-0">
+
+          <div class="swiper mySwiper ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="tecnologys d-none d-lg-flex">
+                  <img src="img/skills/html.png" class="img-fluid" alt="">
+                  <img src="img/skills/css.png" class="img-fluid" alt="">
+                  <img src="img/skills/js.png" class="img-fluid" alt="">
+                  <img src="img/skills/bootstrap.png" class="img-fluid" alt="">
+                </div>
+                <a href="https://www.orbeaduanas.com/" target="_blank">
+                  <img src="img/projects/orbeaduanas-lg.jpg" class="img-fluid" alt="" />
+                </a>
               </div>
-              <div class="footer__social-medias__icons">
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <div class="swiper-slide">
+                <div class="tecnologys d-none d-lg-flex">
+                  <img src="img/skills/html.png" class="img-fluid" alt="">
+                  <img src="img/skills/css.png" class="img-fluid" alt="">
+                  <img src="img/skills/js.png" class="img-fluid" alt="">
+                </div>
+                <a href="https://www.orbeaduanas.com/" target="_blank">
+                  <img src="img/projects/tiendavirtual-lg.jpg" class="img-fluid" alt="" />
+                </a>
               </div>
-              <div class="footer__social-medias__icons">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <div class="swiper-slide">
+                <div class="tecnologys d-none d-lg-flex">
+                  <img src="img/skills/html.png" class="img-fluid" alt="">
+                  <img src="img/skills/css.png" class="img-fluid" alt="">
+                  <img src="img/skills/js.png" class="img-fluid" alt="">
+                  <img src="img/skills/bootstrap.png" class="img-fluid" alt="">
+                </div>
+                <a href="https://www.orbeaduanas.com/" target="_blank">
+                  <img src="img/projects/contrecargo-lg.jpg" class="img-fluid" alt="" />
+                </a>
               </div>
-              <div class="footer__social-medias__icons">
-                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+              <div class="swiper-slide">
+                <div class="tecnologys d-none d-lg-flex">
+                  <img src="img/skills/html.png" class="img-fluid" alt="">
+                  <img src="img/skills/css.png" class="img-fluid" alt="">
+                  <img src="img/skills/js.png" class="img-fluid" alt="">
+                  <img src="img/skills/bootstrap.png" class="img-fluid" alt="">
+                </div>
+                <a href="https://www.orbeaduanas.com/" target="_blank">
+                  <img src="img/projects/orbeaduanas-lg.jpg" class="img-fluid" alt="" />
+                </a>
               </div>
+              <div class="swiper-slide">
+                <div class="tecnologys d-none d-lg-flex">
+                  <img src="img/skills/html.png" class="img-fluid" alt="">
+                  <img src="img/skills/css.png" class="img-fluid" alt="">
+                  <img src="img/skills/js.png" class="img-fluid" alt="">
+                </div>
+                <a href="https://www.orbeaduanas.com/" target="_blank">
+                  <img src="img/projects/tiendavirtual-lg.jpg" class="img-fluid" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <div class="tecnologys d-none d-lg-flex">
+                  <img src="img/skills/html.png" class="img-fluid" alt="">
+                  <img src="img/skills/css.png" class="img-fluid" alt="">
+                  <img src="img/skills/js.png" class="img-fluid" alt="">
+                  <img src="img/skills/bootstrap.png" class="img-fluid" alt="">
+                </div>
+                <a href="https://www.orbeaduanas.com/" target="_blank">
+                  <img src="img/projects/contrecargo-lg.jpg" class="img-fluid" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact -->
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="text-center">
+          <h2 class="contact__title d-inline-block">Contact Me</h2>
+        </div>
+
+        <div class="contact__container row justify-content-center justify-content-xl-start">
+          <h3 class="text-center text-lg-start d-none d-lg-block">Contact Info</h3>
+          <div class="col-lg-4 contact__info">
+            
+
+            <div class="contact__info__item">
+              <div class="contact__info__item__icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact__info__item__text">
+                <span>Mail us</span>
+                <p>bestradag05@gmail.com</p>
+                <p>bestradag0511@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact__info__item">
+              <div class="contact__info__item__icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact__info__item__text">
+                <span>Contact us</span>
+                <p>+51 977834697</p>
+              </div>
+            </div>
+
+            <div class="contact__info__item">
+              <div class="contact__info__item__icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact__info__item__text">
+                <span>Location</span>
+                <p>Av.Revolucion, Villa el salvador, Lima - Perú</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 container__form ms-5 ms-xl-0">
+            <div class="content__form d-flex flex-column align-items-xl-start">
+              <h3 class="my-4">Let’s work together.</h3>
+              <form id="formContact" action="https://formsubmit.co/bestradag0511@gmail.com" method="POST">
+                <div class="content__form__item">
+                  <i class="fa-solid fa-user-tie"></i>
+                  <input autocomplete="off" id="name" type="text" class="form-control" placeholder="Your Name..." />
+                </div>
+
+                <div class="content__form__item">
+                  <i id="prueba" class="fa-sharp fa-solid fa-envelope"></i>
+                  <input autocomplete="off" id="email" type="text" class="form-control" placeholder="Email Adress..." />
+                </div>
+
+                <div class="content__form__item">
+                  <i class="fa-sharp fa-solid fa-messages"></i>
+                  <textarea id="message" type="" class="form-control" placeholder="Your message..."></textarea>
+                </div>
+
+                <button id="buttonform" class="btn" disabled type="submit">
+                  <i class="fa-sharp fa-solid fa-paper-plane-top"></i>
+                  Send
+                </button>
+
+
+
+
+              </form>
+            </div>
+            <div class="content__map d-none d-xl-block">
+              <iframe id="map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-76.9222354888916%2C-12.241493747320051%2C-76.91869497299196%2C-12.239197546388361&amp;layer=mapnik&amp;marker=-12.240345649349695%2C-76.92046523094177">
+              </iframe>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/font-awesome/font-awesome-pro.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+  <!-- footer -->
+
+  <footer class="footer p-3 p-lg-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 my-sm-2 col-lg-4">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-code"></i>
+            <p>Beg<span>Code</span></p>
+          </a>
+        </div>
+        <div class="col-12 my-sm-2 col-lg-4 foooter__text">
+          <p>&copy; 2023 Bryan Estrada. All rights reserved.</p>
+        </div>
+        <div class="col-12 my-sm-2 col-lg-4 footer__icon">
+          <div class="footer__social-medias d-flex aligns-items-center my-3">
+            <div class="footer__social-medias__icons">
+              <a href="https://github.com/bestradag05" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="footer__social-medias__icons">
+              <a href="https://www.linkedin.com/in/bryan-david-estrada-gomez-68a3a7192" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="footer__social-medias__icons">
+              <a href="https://www.facebook.com/profile.php?id=100009390402326&sk=about" target="_blank"><i
+                  class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="footer__social-medias__icons">
+              <a href="https://www.tiktok.com/@bdeg05?is_from_webapp=1&sender_device=pc" target="_blank"><i
+                  class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="js/font-awesome/font-awesome-pro.js"></script>
+  <script src="js/app.js"></script>
+  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+</body>
+
 </html>

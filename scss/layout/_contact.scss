@@ -1,6 +1,6 @@
 .contact {
 
-    background: url(../../img/wave.svg);
+    background: url(../img/contact_wave.svg);
     background-size: cover;
     width: 100%;
     padding: 45px 0;
@@ -24,15 +24,24 @@
 
     .contact__container{
 
+        h3{
+            color: #fff;
+            margin-bottom: 20px;
+            width: 100%;
+        }
        
+        #formContact{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         .contact__info{
-
-            padding: 45px 0 0 0;
-
-            h3{
-                color: #fff;
-                margin-bottom: 20px;
-            }
+            padding: 20px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            
 
             .contact__info__item{
                 display: flex;
@@ -81,24 +90,37 @@
             display: flex;
             position: relative;
             .content__form {
-                display: flex;
-                flex-direction: column;
-                justify-content:  center;
-                align-items: center;
-                padding-left: 50px;
+
+                padding-left:50px;
+                width: 100%;
+                
     
                 h3{
                     color: #fff;
                 }
     
                 button{
-                    @include buttons($primary-color, $color-texto)
+                    @include buttons($primary-color, $color-texto);
+                    width: 125px;
+                    height: 53px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    
+                }
+
+                .btn-confirm{
+                    background: #0f6b0f!important;
+                    border: 1px solid #0f6b0f;
+                    transition: all .5s;
                 }
     
                 .content__form__item {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
+                    flex-flow: row;
                     width: 100%;
                     max-height: 120px;
                     padding-bottom: 20px;
@@ -130,6 +152,8 @@
                         border-bottom: 1px solid $color-texto;
                         margin: 0 10px;
                         color: #fff;
+
+                        
                         
                         &::placeholder
                         {

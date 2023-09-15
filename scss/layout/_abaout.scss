@@ -6,11 +6,10 @@
         display: flex;
         padding: 0 50px;
         &:nth-child(1){
-            background: url("../../img/about_me.png");
+            background: url("../img/about_me.png");
             background-repeat: no-repeat;
             background-position: center;
             height: 290px;
-            justify-content: flex-end;
             align-items: center;
         }
 
@@ -24,7 +23,7 @@
                 @include buttons($primary-color, white);
 
                 &:hover{
-                    @include buttons(transparent, $primary-color);
+                    @include buttons(#d4a01c, $color-texto);
                 }
 
             }
@@ -58,10 +57,6 @@
             color: $color-texto;
             text-align: justify;
     
-        }
-
-        .abaout__buttons{
-            
         }
     
     }

@@ -1,13 +1,18 @@
 header {
-  height: 100vh;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 50px;
-  margin: 70px 0 0 0;
-  /* background: $color-fondo; */
+  justify-content: center;
+  align-items: flex-end;
+  background: url(../img/fondo2.jpg) no-repeat;
+  background-size: cover;
+
+
+
 
   .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     .content--title {
       color: $color-texto;
 
@@ -17,6 +22,7 @@ header {
     }
 
     .content__text {
+      width: 100%;
       color: $color-texto;
     }
 
@@ -30,7 +36,7 @@ header {
     }
 
     .content__text-small {
-      font-size: 2vmin;
+      font-size: 1em;
       color: $color-texto;
     }
 
@@ -40,17 +46,9 @@ header {
   }
 
   .header__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $primary-color;
-    border-radius: 80%;
-
-    img {
-      max-width: 100%;
-      /* width: 400px; */
-      height: auto;
-    }
+    text-align: center;
+    padding: 60px 60px 0 60px;
+    
   }
 
 }
