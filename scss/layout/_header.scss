@@ -1,14 +1,18 @@
 header {
-  height: calc(100vh - 70px);
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0 50px;
-  margin: 70px 0 0 0;
-  background: url(../img/fondo.jpg) no-repeat;
+  justify-content: center;
+  align-items: flex-end;
+  background: url(../img/fondo2.jpg) no-repeat;
   background-size: cover;
 
+
+
+
   .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     .content--title {
       color: $color-texto;
 
@@ -18,6 +22,7 @@ header {
     }
 
     .content__text {
+      width: 100%;
       color: $color-texto;
     }
 
@@ -31,7 +36,7 @@ header {
     }
 
     .content__text-small {
-      font-size: 2vmin;
+      font-size: 1em;
       color: $color-texto;
     }
 
@@ -41,16 +46,9 @@ header {
   }
 
   .header__image {
-    display: flex;
-    justify-content: center;
-
-    position: relative;
-
-    img {
-      width: auto;
-      height: auto;
-      object-fit: cover;
-    }
+    text-align: center;
+    padding: 60px 60px 0 60px;
+    
   }
 
 }
