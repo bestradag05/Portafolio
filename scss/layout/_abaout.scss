@@ -1,5 +1,4 @@
 .abaout{
-
     background: #121d36;
 
     .abaout__div{
@@ -17,15 +16,13 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
-        
+
             .abaout__buttons--block{
                 @include buttons($primary-color, white);
 
                 &:hover{
                     @include buttons(#d4a01c, $color-texto);
                 }
-
             }
 
             .abaout__buttons--outline{
@@ -35,12 +32,10 @@
                     @include buttons($primary-color, white);
                 }
             }
-
         }
 
-    
         .abaout__title{
-           @extend title;
+            @extend title;
 
             &::after{
                 content: '';
@@ -56,11 +51,6 @@
         .abaout__parrafo{
             color: $color-texto;
             text-align: justify;
-    
         }
-    
     }
-    
-
 }
-
